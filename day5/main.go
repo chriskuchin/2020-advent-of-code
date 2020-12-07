@@ -61,11 +61,10 @@ func main() {
 
 	expectedSeat := 0
 	for _, assignedSeat := range seats {
-		fmt.Println(expectedSeat, assignedSeat)
 		if expectedSeat == 0 {
 			expectedSeat = assignedSeat + 1
 		} else if assignedSeat != expectedSeat {
-			fmt.Println(assignedSeat, expectedSeat)
+			fmt.Println(expectedSeat)
 			break
 		} else {
 			expectedSeat++
